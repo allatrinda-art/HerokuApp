@@ -9,6 +9,7 @@ public class HerokuAppTest {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");//хром хранится вот тут
         WebDriver browser = new ChromeDriver();
         browser.get("http://the-internet.herokuapp.com/");
-        browser.quit();
+        browser.quit();//TODO
+
     }
 }
