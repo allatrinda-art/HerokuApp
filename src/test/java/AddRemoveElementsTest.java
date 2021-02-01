@@ -22,7 +22,7 @@ public class AddRemoveElementsTest {
         addElementButton.click();           //КЛИКНУТЬ ADD ЭЛЕМЕНТ
         browser.findElements(By.xpath("//button[text()='Delete']")).get(1).click();         //КЛИКНУТЬ на какую-то кнопку delete
         int numberOfButtons = browser.findElements(By.xpath("/button[text()='Delete']")).size();        //посчитать кол-во элементов delete
-        assertEquals(numberOfButtons, 1, "Кнопок DELETE больше не ожидает");//TODO ? почему 1/сообщение
+        assertEquals(numberOfButtons, 0, "Кнопок DELETE больше не ожидает");//TODO ? почему 1/сообщение
         browser.quit();
 
         /*инпуты
